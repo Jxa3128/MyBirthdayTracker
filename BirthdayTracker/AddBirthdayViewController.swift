@@ -8,6 +8,11 @@
 
 import UIKit
 
+//adding the protocol
+protocol AddBirthdayViewControllerDelegate{
+    func addBirthdayViewController(_ addBirthdayViewController: AddBirthdayViewController, didAddBirthday birthday: Birthday)
+
+}
 class AddBirthdayViewController: UIViewController {
     
     @IBOutlet var firstNameTextField: UITextField!
@@ -36,6 +41,7 @@ class AddBirthdayViewController: UIViewController {
     @IBAction func cancelTapped(_sender: UIBarButtonItem){
         dismiss(animated: true, completion: nil)
     }
-
+    
 }
+
 

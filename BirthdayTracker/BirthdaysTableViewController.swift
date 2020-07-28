@@ -8,7 +8,7 @@
 
 import UIKit
 
-class BirthdaysTableViewController: UITableViewController {
+class BirthdaysTableViewController: UITableViewController, AddBirthdayViewControllerDelegate {
 
     //this creates an array of Birthday classes
     var birthdays = [Birthday]()
@@ -45,7 +45,12 @@ class BirthdaysTableViewController: UITableViewController {
         return cell
     }
     
-
+    
+    func addBirthdayViewController(_ addBirthdayViewController: AddBirthdayViewController, didAddBirthday birthday: Birthday){
+    birthdays.append(birthday)
+    tableView.reloadData()
+    }
+    
     /*
     // Override to support conditional editing of the table view.
     override func tableView(_ tableView: UITableView, canEditRowAt indexPath: IndexPath) -> Bool {
