@@ -7,8 +7,8 @@
 //
 
 import UIKit
-
-class BirthdaysTableViewController: UITableViewController, AddBirthdayViewControllerDelegate {
+import CoreData
+class BirthdaysTableViewController: UITableViewController{
 
     //this creates an array of Birthday classes
     var birthdays = [Birthday]()
@@ -21,7 +21,20 @@ class BirthdaysTableViewController: UITableViewController, AddBirthdayViewContro
         dateFormatter.dateStyle = .full
         dateFormatter.timeStyle = .none
     }
-
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        
+        let appDelegate = UIApplication.shared.delegate as! AppDelegate
+        let context = appDelegate.persistentContainer.viewContext
+        
+        let fetchRequest = Birthday.fetchRequest() as NSFetchRequest<Birthday>
+        do{
+            birthdays = try context.fetch(fetchRequest)
+        } catch let error {
+            print("Could not fetch because of the \(error)")
+        }
+        tableView.reloadData()
+    }
     // MARK: - Table view data source
 
     override func numberOfSections(in tableView: UITableView) -> Int {
@@ -40,16 +53,20 @@ class BirthdaysTableViewController: UITableViewController, AddBirthdayViewContro
 
         //position the birthday and fill in those rows 
         let birthday = birthdays[indexPath.row]
-        cell.textLabel?.text = birthday.firstName + " " + birthday.lastName
-        cell.detailTextLabel?.text = dateFormatter.string(from: birthday.birthdate)
+        let firstname = birthday.firstname ?? ""
+        let lastname = birthday.lastname ?? ""
+        cell.textLabel?.text = firstname + " " + lastname
+        
+        if let date = birthday.birthdate as Date? {
+            cell.detailTextLabel?.text = dateFormatter.string(from: date)
+        } else {
+            cell.detailTextLabel?.text = ""
+        }
+        
         return cell
     }
     
     
-    func addBirthdayViewController(_ addBirthdayViewController: AddBirthdayViewController, didAddBirthday birthday: Birthday){
-    birthdays.append(birthday)
-    tableView.reloadData()
-    }
     
     /*
     // Override to support conditional editing of the table view.
@@ -90,13 +107,7 @@ class BirthdaysTableViewController: UITableViewController, AddBirthdayViewContro
     // MARK: - Navigation
 
     // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-        let navigationController = segue.destination as! UINavigationController
-        let addBirthdayViewController = navigationController.topViewController as! AddBirthdayViewController
-        addBirthdayViewController.delegate = self
-    }
+    
     
 
 }

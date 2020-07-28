@@ -7,19 +7,16 @@
 //
 
 import UIKit
+import CoreData
 
-//adding the protocol
-protocol AddBirthdayViewControllerDelegate{
-    func addBirthdayViewController(_ addBirthdayViewController: AddBirthdayViewController, didAddBirthday birthday: Birthday)
 
-}
 class AddBirthdayViewController: UIViewController {
     
     @IBOutlet var firstNameTextField: UITextField!
     @IBOutlet var lastNameTextField: UITextField!
     @IBOutlet var birthdatePicker: UIDatePicker!
     
-    var delegate: AddBirthdayViewControllerDelegate?
+    
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -28,21 +25,31 @@ class AddBirthdayViewController: UIViewController {
         birthdatePicker.maximumDate = Date()
     }
     @IBAction func saveTapped(_sender: UIBarButtonItem){
-        print("The save button was tapped\n")
         let firstName = firstNameTextField.text ?? ""
         let lastName = lastNameTextField.text ?? ""
-        print("First name is: \(firstName) and Last name is: \(lastName).")
         let birthdate = birthdatePicker.date
-        print("The birthdate is: \(birthdate)")
         
-        let newBirthday = Birthday(firstName: firstName, lastName: lastName, birthdate: birthdate)
         
-        print("birthdate: \(newBirthday.birthdate)")
+        let appDelegate = UIApplication.shared.delegate as! AppDelegate
+        let context = appDelegate.persistentContainer.viewContext
         
-        //passing the delegate to birthday class
-        delegate?.addBirthdayViewController(self, didAddBirthday: newBirthday)
+        let newBirthday = Birthday(context: context)
+        newBirthday.firstname = firstName
+        newBirthday.lastname = lastName
+        newBirthday.birthdate = birthdate as Date?
+        newBirthday.birthdayId = UUID().uuidString
+        
+        if let uniqueId = newBirthday.birthdayId{
+            print("The birthdayId is: \(uniqueId) ")
+        }
+        do {
+            try context.save()
+        } catch let error {
+            print("could not save because of \(error)")
+        }
         dismiss(animated: true, completion: nil)
     }
+    
     @IBAction func cancelTapped(_sender: UIBarButtonItem){
         dismiss(animated: true, completion: nil)
     }
