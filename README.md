@@ -14,4 +14,4 @@ You will need the following things properly installed on your computer.
 * `git clone https://github.com/Jxa3128/MyBirthdayTracker.git` this repository
 * `cd MyBirthdayTrackder`
 * `open in XCode`
-* `build on any ios devices`
+* `build on any ios devices simulators or even on your ios device`
