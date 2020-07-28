@@ -210,7 +210,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 2DA3D2B424CE869900745DF9 /* Build configuration list for PBXProject "BirthdayTracker" */;
+			buildConfigurationList = 2DA3D2B424CE869900745DF9 /* Build configuration list for PBXProject "Birthdays" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -551,7 +551,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		2DA3D2B424CE869900745DF9 /* Build configuration list for PBXProject "BirthdayTracker" */ = {
+		2DA3D2B424CE869900745DF9 /* Build configuration list for PBXProject "Birthdays" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				2DA3D2E424CE869B00745DF9 /* Debug */,
