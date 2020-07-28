@@ -15,48 +15,69 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Nombre" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="92w-pL-dz9">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Nombre" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="92w-pL-dz9">
                                 <rect key="frame" x="20" y="100" width="100" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Apellido" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Qpq-kN-mge">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Apellido" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Qpq-kN-mge">
                                 <rect key="frame" x="20" y="170" width="100" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Fecha" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fLA-2X-gOL">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Fecha" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fLA-2X-gOL">
                                 <rect key="frame" x="20" y="250" width="100" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Apellido" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="76z-9f-T3i">
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Apellido" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="76z-9f-T3i">
                                 <rect key="frame" x="20" y="200" width="335" height="34"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="34" id="3gA-ON-5dt"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <datePicker contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="date" useCurrentDate="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7IC-R4-cmj">
+                            <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="date" useCurrentDate="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7IC-R4-cmj">
                                 <rect key="frame" x="0.0" y="280" width="400" height="230"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
                                 <date key="date" timeIntervalSinceReferenceDate="-49409349.066835046">
                                     <!--1999-06-09 03:10:50 +0000-->
                                 </date>
                             </datePicker>
-                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Nombre" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="yW7-DM-3f1">
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Nombre" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="yW7-DM-3f1">
                                 <rect key="frame" x="20" y="130" width="335" height="34"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="34" id="22F-sd-P4c"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="Qpq-kN-mge" firstAttribute="top" secondItem="yW7-DM-3f1" secondAttribute="bottom" constant="6" id="0yg-rG-Itc"/>
+                            <constraint firstItem="92w-pL-dz9" firstAttribute="leading" secondItem="yW7-DM-3f1" secondAttribute="leading" id="86A-fX-07F"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="7IC-R4-cmj" secondAttribute="bottom" constant="298" id="9xF-bH-WJ6"/>
+                            <constraint firstItem="Qpq-kN-mge" firstAttribute="leading" secondItem="76z-9f-T3i" secondAttribute="leading" id="F5F-Ai-udj"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="7IC-R4-cmj" secondAttribute="trailing" constant="14" id="Gso-eV-phK"/>
+                            <constraint firstItem="fLA-2X-gOL" firstAttribute="top" secondItem="76z-9f-T3i" secondAttribute="bottom" constant="16" id="KOz-wL-tHD"/>
+                            <constraint firstItem="yW7-DM-3f1" firstAttribute="top" secondItem="92w-pL-dz9" secondAttribute="bottom" constant="9" id="M9f-Jl-uCO"/>
+                            <constraint firstItem="7IC-R4-cmj" firstAttribute="top" secondItem="fLA-2X-gOL" secondAttribute="bottom" constant="9" id="NL9-sk-Xdd"/>
+                            <constraint firstItem="yW7-DM-3f1" firstAttribute="trailing" secondItem="76z-9f-T3i" secondAttribute="trailing" id="S6s-1d-QT8"/>
+                            <constraint firstItem="76z-9f-T3i" firstAttribute="top" secondItem="Qpq-kN-mge" secondAttribute="bottom" constant="9" id="TtB-yz-bVH"/>
+                            <constraint firstItem="92w-pL-dz9" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="44" id="XJW-fB-F6A"/>
+                            <constraint firstItem="92w-pL-dz9" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="cOZ-As-Vud"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="92w-pL-dz9" secondAttribute="trailing" constant="294" id="e9x-iT-8Hg"/>
+                            <constraint firstItem="76z-9f-T3i" firstAttribute="leading" secondItem="fLA-2X-gOL" secondAttribute="leading" id="eZy-nT-yz7"/>
+                            <constraint firstItem="yW7-DM-3f1" firstAttribute="leading" secondItem="Qpq-kN-mge" secondAttribute="leading" id="eca-2k-KDj"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="yW7-DM-3f1" secondAttribute="trailing" constant="59" id="jzR-aa-Ldb"/>
+                            <constraint firstItem="7IC-R4-cmj" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="kOC-TA-0Wa"/>
+                            <constraint firstItem="Qpq-kN-mge" firstAttribute="trailing" secondItem="fLA-2X-gOL" secondAttribute="trailing" id="nAL-Cm-65Z"/>
+                            <constraint firstItem="92w-pL-dz9" firstAttribute="trailing" secondItem="Qpq-kN-mge" secondAttribute="trailing" id="u12-PH-ehW"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <navigationItem key="navigationItem" title="Agrega un Cumpleaño" id="kKu-vv-YR0"/>
