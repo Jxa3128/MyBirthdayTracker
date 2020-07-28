@@ -15,3 +15,6 @@ You will need the following things properly installed on your computer.
 * `cd MyBirthdayTrackder`
 * `open in XCode`
 * `build on any ios devices simulators or even on your ios device`
+
+## For more information
+Please visit `[here](https://nostarch.com/iphoneappsforkids)` to get started on coding for beginners 
