@@ -17,6 +17,7 @@
 		2DA3D2D724CE869B00745DF9 /* BirthdayTrackerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DA3D2D624CE869B00745DF9 /* BirthdayTrackerTests.swift */; };
 		2DA3D2E224CE869B00745DF9 /* BirthdayTrackerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DA3D2E124CE869B00745DF9 /* BirthdayTrackerUITests.swift */; };
 		2DA3D2F024CFD51900745DF9 /* Birthday.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DA3D2EF24CFD51900745DF9 /* Birthday.swift */; };
+		2DA3D2F424CFE24100745DF9 /* BirthdaysTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DA3D2F324CFE24100745DF9 /* BirthdaysTableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +54,7 @@
 		2DA3D2E124CE869B00745DF9 /* BirthdayTrackerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BirthdayTrackerUITests.swift; sourceTree = "<group>"; };
 		2DA3D2E324CE869B00745DF9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2DA3D2EF24CFD51900745DF9 /* Birthday.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Birthday.swift; sourceTree = "<group>"; };
+		2DA3D2F324CFE24100745DF9 /* BirthdaysTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BirthdaysTableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,6 +108,7 @@
 				2DA3D2BC24CE869900745DF9 /* AppDelegate.swift */,
 				2DA3D2BE24CE869900745DF9 /* SceneDelegate.swift */,
 				2DA3D2C024CE869900745DF9 /* AddBirthdayViewController.swift */,
+				2DA3D2F324CFE24100745DF9 /* BirthdaysTableViewController.swift */,
 				2DA3D2C224CE869900745DF9 /* Main.storyboard */,
 				2DA3D2EF24CFD51900745DF9 /* Birthday.swift */,
 				2DA3D2C824CE869A00745DF9 /* Assets.xcassets */,
@@ -265,6 +268,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2DA3D2F424CFE24100745DF9 /* BirthdaysTableViewController.swift in Sources */,
 				2DA3D2F024CFD51900745DF9 /* Birthday.swift in Sources */,
 				2DA3D2C124CE869900745DF9 /* AddBirthdayViewController.swift in Sources */,
 				2DA3D2BD24CE869900745DF9 /* AppDelegate.swift in Sources */,
