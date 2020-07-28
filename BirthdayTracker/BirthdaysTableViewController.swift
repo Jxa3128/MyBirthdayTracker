@@ -8,6 +8,7 @@
 
 import UIKit
 import CoreData
+import UserNotifications
 class BirthdaysTableViewController: UITableViewController{
 
     //this creates an array of Birthday classes
