@@ -60,6 +60,8 @@ class BirthdaysTableViewController: UITableViewController{
 
         //position the birthday and fill in those rows 
         let birthday = birthdays[indexPath.row]
+        
+        
         let firstname = birthday.firstname ?? ""
         let lastname = birthday.lastname ?? ""
         cell.textLabel?.text = firstname + " " + lastname
@@ -88,6 +90,14 @@ class BirthdaysTableViewController: UITableViewController{
     override func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
         if birthdays.count > indexPath.row {
             let birthday = birthdays[indexPath.row]
+            
+            //remove notification
+            /*
+            if let identifier = birthday.birthdayId {
+                let center = UNUserNotificationCenter.current()
+                center.removeAllPendingNotificationRequests(withIdentifiers: [identifier])
+            }
+            */
             let appDelegate = UIApplication.shared.delegate as! AppDelegate
             let context = appDelegate.persistentContainer.viewContext
             context.delete(birthday)
