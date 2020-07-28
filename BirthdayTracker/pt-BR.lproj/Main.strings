@@ -1,0 +1,27 @@
+
+/* Class = "UITextField"; text = "Apellido"; ObjectID = "76z-9f-T3i"; */
+"76z-9f-T3i.text" = "Apellido";
+
+/* Class = "UILabel"; text = "Nombre"; ObjectID = "92w-pL-dz9"; */
+"92w-pL-dz9.text" = "Nombre";
+
+/* Class = "UILabel"; text = "Apellido"; ObjectID = "Qpq-kN-mge"; */
+"Qpq-kN-mge.text" = "Apellido";
+
+/* Class = "UILabel"; text = "Fecha"; ObjectID = "fLA-2X-gOL"; */
+"fLA-2X-gOL.text" = "Fecha";
+
+/* Class = "UILabel"; text = "Title"; ObjectID = "gxt-ST-R9x"; */
+"gxt-ST-R9x.text" = "Title";
+
+/* Class = "UILabel"; text = "Subtitle"; ObjectID = "iMD-J9-JWJ"; */
+"iMD-J9-JWJ.text" = "Subtitle";
+
+/* Class = "UINavigationItem"; title = "Agrega un Cumpleaño"; ObjectID = "kKu-vv-YR0"; */
+"kKu-vv-YR0.title" = "Agrega un Cumpleaño";
+
+/* Class = "UINavigationItem"; title = "Cumpleaños"; ObjectID = "vmn-d4-CMn"; */
+"vmn-d4-CMn.title" = "Cumpleaños";
+
+/* Class = "UITextField"; text = "Nombre"; ObjectID = "yW7-DM-3f1"; */
+"yW7-DM-3f1.text" = "Nombre";
